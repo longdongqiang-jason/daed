@@ -56,7 +56,7 @@ FROM alpine
 
 RUN apk add --no-cache ca-certificates
 
-LABEL org.opencontainers.image.source="https://github.com/huajiaoshu520/daed"
+LABEL org.opencontainers.image.source="https://github.com/longdongqiang-jason/daed"
 
 RUN mkdir -p /usr/local/share/daed/ && \
     mkdir -p /etc/daed/
