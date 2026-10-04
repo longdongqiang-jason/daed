@@ -32,9 +32,9 @@ jobs:
       # daed main + dae-wing main + dae main
       #
       # 固定使用：
-      # huajiaoshu520/daed
-      # huajiaoshu520/dae-wing
-      # huajiaoshu520/dae
+      # longdongqiang-jason/daed
+      # longdongqiang-jason/dae-wing
+      # longdongqiang-jason/dae
       # ============================================================
       - name: Update daed + dae-wing + dae to latest main
         shell: bash
@@ -53,7 +53,7 @@ jobs:
           echo ">>> daed"
 
           git remote set-url origin \
-            https://github.com/huajiaoshu520/daed.git
+            https://github.com/longdongqiang-jason/daed.git
 
           # --------------------------------------------------------
           # dae-wing
@@ -65,7 +65,7 @@ jobs:
           git submodule update --init wing
 
           git -C wing remote set-url origin \
-            https://github.com/huajiaoshu520/dae-wing.git
+            https://github.com/longdongqiang-jason/dae-wing.git
 
           git -C wing fetch origin main
           git -C wing checkout --detach origin/main
@@ -80,7 +80,7 @@ jobs:
           git -C wing submodule update --init dae-core
 
           git -C wing/dae-core remote set-url origin \
-            https://github.com/huajiaoshu520/dae.git
+            https://github.com/longdongqiang-jason/dae.git
 
           git -C wing/dae-core fetch origin main
           git -C wing/dae-core checkout --detach origin/main
@@ -205,8 +205,8 @@ jobs:
       # Docker metadata
       #
       # 自动生成：
-      # ghcr.io/huajiaoshu520/daed:latest
-      # ghcr.io/huajiaoshu520/daed:1.28.0
+      # ghcr.io/longdongqiang-jason/daed:latest
+      # ghcr.io/longdongqiang-jason/daed:1.28.0
       # ============================================================
       - name: Docker metadata
         id: meta
