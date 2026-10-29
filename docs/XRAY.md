@@ -60,7 +60,7 @@ This is a client integration, not an Xray server-management panel.
 
 Docker builds use the committed wing and dae-core submodule revisions, including
 in CI. Pull requests build the same image without publishing it; main builds
-publish to `ghcr.io/huajiaoshu520/daed`.
+publish to `ghcr.io/longdongqiang-jason/daed`.
 
 The Docker build runs the adapter integration tests using the bundled Xray,
 then builds the normal dae eBPF objects and daed bundle. Native development
