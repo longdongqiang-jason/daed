@@ -62,14 +62,14 @@ jobs:
       # Docker Buildx
       # ============================================================
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v4
 
       # ============================================================
       # Login GHCR
       # ============================================================
       - name: Login to GHCR
         if: github.event_name != 'pull_request'
-        uses: docker/login-action@v3
+        uses: docker/login-action@v4
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
@@ -79,12 +79,12 @@ jobs:
       # Docker metadata
       #
       # 自动生成：
-      # ghcr.io/huajiaoshu520/daed:latest
-      # ghcr.io/huajiaoshu520/daed:1.28.0
+      # ghcr.io/longdongqiang-jason/daed:latest
+      # ghcr.io/longdongqiang-jason/daed:1.28.0
       # ============================================================
       - name: Docker metadata
         id: meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
@@ -95,7 +95,7 @@ jobs:
       # Build + Push
       # ============================================================
       - name: Build and push
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           file: ./Dockerfile
