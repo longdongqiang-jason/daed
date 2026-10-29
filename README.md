@@ -70,7 +70,7 @@ Vision. See [Xray support and limits](docs/XRAY.md) for supported link parameter
 Pull the prebuilt image:
 
 ```bash
-docker pull ghcr.io/huajiaoshu520/daed
+docker pull ghcr.io/longdongqiang-jason/daed
 ```
 
 Run the container:
@@ -84,7 +84,7 @@ docker run -d \
     -v /sys:/sys \
     -v /etc/daed:/etc/daed \
     --name=daed \
-    ghcr.io/huajiaoshu520/daed:latest
+    ghcr.io/longdongqiang-jason/daed:latest
 ```
 
 Or use Docker Compose:
@@ -93,7 +93,7 @@ Or use Docker Compose:
 # docker-compose.yml
 services:
   daed:
-    image: ghcr.io/huajiaoshu520/daed
+    image: ghcr.io/longdongqiang-jason/daed
     container_name: daed
     privileged: true
     network_mode: host
@@ -121,7 +121,7 @@ Access the dashboard at `http://localhost:2023`.
 
 ```bash
 # Clone the repository
-git clone --recurse-submodules https://github.com/huajiaoshu520/daed.git
+git clone --recurse-submodules https://github.com/longdongqiang-jason/daed.git
 cd daed
 
 # Install dependencies
