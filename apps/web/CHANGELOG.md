@@ -1,5 +1,54 @@
 # Changelog
 
+## [1.29.0](https://github.com/longdongqiang-jason/daed/compare/v1.28.0...v1.29.0) (2026-11-06)
+
+
+### Features
+
+* add built-in rule data manager ([f1c2adb](https://github.com/longdongqiang-jason/daed/commit/f1c2adbc05d9e1672ea953c2d1a865606e3b3658))
+* add built-in rule data manager ([abfc92f](https://github.com/longdongqiang-jason/daed/commit/abfc92f34c87dd05fa46b9cd280daba25c786d25))
+* add Xray core manager panel and bundle v26.10.31 ([32e0b59](https://github.com/longdongqiang-jason/daed/commit/32e0b5916f3a09a2220f153b7cb037c8a01eaef9))
+* add Xray core manager panel and bundle v26.10.31 ([9497045](https://github.com/longdongqiang-jason/daed/commit/949704571d9a902f5bc874e84b59afafafaa14fd))
+* clean obsolete managed cores after successful updates ([6342b4e](https://github.com/longdongqiang-jason/daed/commit/6342b4ede20eb04fe5beb1b8375c5e7d687d357c))
+* clean obsolete managed cores after successful updates ([0be9f46](https://github.com/longdongqiang-jason/daed/commit/0be9f46823cf8f3a99d9b3c6778b820f704545c1))
+* **dae-lsp:** add browser LSP support and fix completions ([32b5b49](https://github.com/longdongqiang-jason/daed/commit/32b5b49abd58b8f16c72a2f2dd188bc7c2cf7877))
+* optimize user experience ([7013499](https://github.com/longdongqiang-jason/daed/commit/701349900e004eafa8c3e4c4326059c63fb8057a))
+* **parser:** add parser for dae language with AST and symbol information ([12b5754](https://github.com/longdongqiang-jason/daed/commit/12b5754b8f53b5dbac00b9aac0839f5d52113736))
+* re-trigger release-please ([4febcf7](https://github.com/longdongqiang-jason/daed/commit/4febcf7ebba807474e8215510669e0a756c31585))
+* trigger release ([e6618d5](https://github.com/longdongqiang-jason/daed/commit/e6618d5cfb721dec3633278018e2f254c23daff9))
+* **ui:** enhance layout and visual design system ([1bc9280](https://github.com/longdongqiang-jason/daed/commit/1bc928076986884658551f5634a80b86d10c3a26))
+* update pnpm workspace and add turbo configuration ([4484dc4](https://github.com/longdongqiang-jason/daed/commit/4484dc43be6f1d229053bcc7bd589c528707024f))
+* **web:** add bootstrap resolver config input ([#757](https://github.com/longdongqiang-jason/daed/issues/757)) ([4d6a433](https://github.com/longdongqiang-jason/daed/commit/4d6a43331f2f6e25961935b9e7ac09a7568bb2b4))
+* **web:** add group resource pickers and improve drag UX ([#736](https://github.com/longdongqiang-jason/daed/issues/736)) ([cfb0ec5](https://github.com/longdongqiang-jason/daed/commit/cfb0ec528cc8bc3bfeed1dd1a9353bf9fa62de03))
+* **web:** add regex-filtered group subscriptions ([#738](https://github.com/longdongqiang-jason/daed/issues/738)) ([3b62c11](https://github.com/longdongqiang-jason/daed/commit/3b62c111172a906edc9d79335527f8206819cb8c))
+* **web:** add runtime traffic overview and node latency displays ([#742](https://github.com/longdongqiang-jason/daed/issues/742)) ([4a519fc](https://github.com/longdongqiang-jason/daed/commit/4a519fcbaa7004e50e80a309c68d6811596468cf))
+* **xray:** accept VLESS encryption in the node form [skip ci] ([9c47878](https://github.com/longdongqiang-jason/daed/commit/9c47878c60fd7f20d1e71475e5e0dfa726da81aa))
+* **xray:** expose VLESS encryption in the node editor [skip ci] ([3dfa4f3](https://github.com/longdongqiang-jason/daed/commit/3dfa4f3d6d0ebbf37294ab21bf514dfde00fb563))
+* **xray:** set VLESS encryption form default [skip ci] ([5a04a7c](https://github.com/longdongqiang-jason/daed/commit/5a04a7c53f064e9cf0bb9ba6c3f0a239b0e5e24d))
+
+
+### Bug Fixes
+
+* clear transport errors when background task recovers ([9ef9567](https://github.com/longdongqiang-jason/daed/commit/9ef9567ea1ad88a59124aa85fac6e842f87b5565))
+* **dnd:** allow dragging subscription nodes into groups ([605ad48](https://github.com/longdongqiang-jason/daed/commit/605ad4847232fdc882ccf1304e8c6417b7645b6b))
+* **dnd:** migrate to @hello-pangea/dnd and fix drag issues in modals ([76d4492](https://github.com/longdongqiang-jason/daed/commit/76d4492793236d73a897657cafdcbf09b9d46c1f))
+* **pr-677:** address review feedback ([ebd7b7c](https://github.com/longdongqiang-jason/daed/commit/ebd7b7c379e85e49feb986f7d1da99f1fa30d2d0))
+* remove rolldownOptions from build configuration ([632c33d](https://github.com/longdongqiang-jason/daed/commit/632c33d620522c9d960321aa0ad6690f6b3fc2a2))
+* resolve CI failures from dependency upgrade breakages ([e46053f](https://github.com/longdongqiang-jason/daed/commit/e46053f3f809cc632c9550720cbf41e9df423f90))
+* retry Xray downloads through official asset API and HTTP/1.1 ([7ff9086](https://github.com/longdongqiang-jason/daed/commit/7ff9086e325b66678803277e1d3c7e00652d54cd))
+* retry Xray downloads through official asset API and HTTP/1.1 ([4e6c292](https://github.com/longdongqiang-jason/daed/commit/4e6c29203ed02f13689972a1f7ac5425cfc8e720))
+* run Xray updates in background with recoverable progress ([ea0745e](https://github.com/longdongqiang-jason/daed/commit/ea0745e39514b0a5d18b50fd863f2285d059f384))
+* run Xray updates in background with recoverable progress ([7735c21](https://github.com/longdongqiang-jason/daed/commit/7735c21968bd784cf056b4e04c91b655872e1549))
+* **ui:** fix scrolling issue of multi-select component ([#726](https://github.com/longdongqiang-jason/daed/issues/726)) ([a8fe086](https://github.com/longdongqiang-jason/daed/commit/a8fe08601dc1e5c4b34932a1bd95960c6c20c77d))
+* **web:** drop unused GroupAddNodes variable ([#741](https://github.com/longdongqiang-jason/daed/issues/741)) ([02016e7](https://github.com/longdongqiang-jason/daed/commit/02016e70505b8ca35ae717f641276f479bbd742e))
+* **web:** first batch of dashboard fixes from a whole-project review ([#784](https://github.com/longdongqiang-jason/daed/issues/784)) ([b3043aa](https://github.com/longdongqiang-jason/daed/commit/b3043aa7ce07c774c65e546112aa2c7a1c12edb5))
+* **web:** preserve setup progress after successful login ([f375e7c](https://github.com/longdongqiang-jason/daed/commit/f375e7c15945ad8dea81dcc3ec9366820da50280))
+* **web:** scope session remounts to authenticated routes ([969ccbe](https://github.com/longdongqiang-jason/daed/commit/969ccbe7692cdccf900dee5bd54e97812029d2bb))
+* **xray:** retain encryption when generating VLESS links [skip ci] ([e9c75dd](https://github.com/longdongqiang-jason/daed/commit/e9c75dd44efcf5a1b8f3e559b0de61f34312d8bf))
+* **xray:** support current encrypted XHTTP Vision links ([168b2bb](https://github.com/longdongqiang-jason/daed/commit/168b2bb8d5a808a9632e6a89d9b0bb53a0f54db8))
+* **xray:** upgrade core and preserve encrypted XHTTP Vision links ([127b130](https://github.com/longdongqiang-jason/daed/commit/127b130e9bd231d4317d41bbcafa925660d1be1c))
+* 节点行域名过长时删除按钮被挤出可视区域 ([55030d3](https://github.com/longdongqiang-jason/daed/commit/55030d340da11a0e55cb8bb95caf314b42c23386))
+
 ## [1.28.0](https://github.com/daeuniverse/daed/compare/v1.27.0...v1.28.0) (2026-04-18)
 
 
